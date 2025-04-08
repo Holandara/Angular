@@ -1,3 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
+
+@theme {
+    --color-blue: #6F9DE2;
+    --color-purple: #9871F3;
+    --color-danger: #FF90B0;
+
+    --color-gray-100: #DAE4F2;
+    --color-gray-200: #C8D0DA;
+    --color-gray-300: #95A1B1;
+    --color-gray-400: #6F7D90;
+    --color-gray-500: #2A313C;
+    --color-gray-600: #21252C;
+    --color-gray-800: #13161B;
+    --color-gray-900: #121212;
+    --color-gray-1000: #1E1E1E;
+
+    --font-typographica: var(--font-typographica);
+    --font-sans: var(--font-montserrat);
+    
+    --radius-xl: 0.625rem;
+
+    --breakpoint-sm: 30rem;
+    
+}
+
+
+    /* Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #1f2937; /* Cor do fundo (gray-800) */
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #8b5cf6; /* Cor do thumb (purple-500) */
+        border-radius: 9999px; /* Arredondamento total */
+    }
+    
+    /* Scrollbar para Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #8b5cf6 #1f2937; /* thumb e track */
+    }
+
+    /* Substitui o cursor padrão em todo o site */

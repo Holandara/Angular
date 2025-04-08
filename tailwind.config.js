@@ -13,6 +13,7 @@ module.exports = {
                 sans: ['Helvetica', 'Arial', 'sans-serif'],
                 serif: ['Georgia', 'serif'],
             },
+
         },
     },
 }

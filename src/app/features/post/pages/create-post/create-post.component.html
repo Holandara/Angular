@@ -1,28 +1,30 @@
-<div class="max-w-7xl mx-auto px-4">
+<div class="max-w-2xl mx-auto px-20">
     <form [formGroup]="createPostForm" (ngSubmit)="onFormSubmit()">
         <h1 class="text-3xl mt-8 font-extrabold">
-            Create Post
+            Login rascunho
         </h1>
         
+        <!-- User -->
         <div class="mt-4">
-        <label fro="title" class="w-full">Title</label>
+        <label fro="title" class="w-full">Usuário</label>
             <input type="text" class="bg-neutral-100 w-full px-4 py-2 mt-2"
-            placeholder="Enter a title for your post" 
+            placeholder="Coloque seu usuário" 
             autocomplete="off"
             formControlName="title">
 
         </div>
 
+        <!-- Password -->
         <div class="mt-4">
-            <label for="title" class="w-full">Content</label>
-            <textarea class="bg-neutral-100 w-full px-4 py-2 mt-2" 
-            placeholder="Post Content"
-            formControlName="content"></textarea>
+            <label for="title" class="w-full">Senha</label>
+            <input class="bg-neutral-100 w-full px-4 py-2 mt-2 border-2 rounded-md" 
+            placeholder="Digite sua senha"
+            formControlName="content">
         </div>
 
         <div class="mt-4">
-            <button type="submit" class="px-4 py-2 rounded bg-indigo-500 text-white">
-                Publish
+            <button type="submit" class="px-4 py-2 rounded bg-danger text-white mb-10">
+                Login
             </button>
         </div>
     </form>

@@ -1,14 +1,18 @@
 <div class="max-w-7xl mx-auto">
     <div class="p-4 flex">
         <a [routerLink]="['/']">
-            <img src="assets/images/favicon.ico" alt="Logo" class="w-[150px]">
+            <img src="assets/images/favicon.ico" alt="Logo" class="w-[30px]">
         </a>
 
         <div class="ms-auto flex items-center ">
-            <a [routerLink]="['./create-post']" class="bg-indigo-500 text-white px-4 p-y2 rounded">
-                Create Post
+            <a [routerLink]="['./create-post']" class="bg-danger text-white p-2 rounded mr-1">
+                Login
+            </a>
+            <a [routerLink]="['./create-post']" class="bg-danger text-white p-2  rounded ml-1">
+                Sing Up
             </a>
         </div>
 
+        
     </div>
 </div>
